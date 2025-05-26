@@ -1,0 +1,172 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-shadow: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #171d25;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1b2838;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.8s;
+}
+
+nav a:hover {
+  color: #1b2838; 
+}
+
+main {
+  padding: 20px;
+  background-color: #1b2838;
+  color: white;
+}
+
+.Lanca,
+.Ofertas {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.Ofertas {
+  margin-bottom: 19px;
+}
+
+.Lançamentos,
+.Ofertas-especiais {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.Lancamento-preco {
+  margin-left: 28px;
+  color: #66c0f4;
+  font-weight: bold;
+}
+
+.preco-pequeno {
+  margin-top: 15px;
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 120px;
+}
+
+.para a {
+  margin-top: 10px;
+  background-color: #66c0f4;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+}
+
+
+.gta {
+  transition: transform 0.4s;
+}
+
+.gta:hover {
+  transform: scale(1.03);
+}
+
+.Lançamentos img,
+.qtdg {
+  border-radius: 8px;
+}
+
+/* Tamanho fixo para imagens grandes */
+.qtdg {
+  width: 700px;     /* Altere conforme o design desejado */
+  height: 380px;    /* Mantido com base no .quadrogrande */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Tamanho fixo para imagens pequenas */
+.qtdp {
+  width: 329px;     /* Altere conforme o design desejado */
+  height: 280px;    /* Proporcional ao tamanho pequeno */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+
+.conjunto {
+  display: flex;
+  flex-direction: column;
+}
+
+.conjunto-reverso {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 300px;
+}
+
+.conjunto-pequeno {
+  display: flex;
+  gap: 20px;
+}
+
+.quadrogrande {
+  height: 220px;
+}
+
+.quadro-grande {
+    margin-bottom: 5px;
+} 
+
+.quadro-pequeno,
+.quadro-grande {
+
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1b2838;
+  transition: transform 0.3s;
+}
+
+.quadro-pequeno:hover,
+.quadro-grande:hover {
+  transform: scale(1.02);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #171a21;
+}
+
+footer a {
+  color: #66c0f4;
+  text-decoration: none;
+  font-weight: bold;
+}
