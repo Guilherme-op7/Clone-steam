@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bem-vindo(a) ao Steam</title>
+  <link rel="stylesheet" href="/public/css/categorias.css" />
+  <link rel="shortcut icon" href="https://store.steampowered.com/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+    <img class="logo" src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png" alt="Logo-steam" />
+
+    <button class="botao-menu" id="abrir-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="menu-navegacao" id="menu-navegacao">
+      <a href="/src/pages/home/loja.html">Loja</a>
+      <a href="/src/pages/home/cat.html">Categorias</a>
+      <a href="/src/pages/home/biblioteca.html">Biblioteca</a>
+    </nav>
+  </header>
+
+  <main class="conteudo-principal">
+    <section class="sessao-categorias">
+      <h1 class="titulo">CATEGORIAS PRINCIPAIS</h1>
+      
+
+<div class="grade-categorias">
+
+  <div class="cartao-categoria">
+    <h4><i class="fas fa-gamepad"></i>Principais categorias de Jogos</h4>
+    <ul>
+      <li><a href="#">Ação</a></li>
+      <li><a href="#">Aventura</a></li>
+      <li><a href="#">RPG</a></li>
+      <li><a href="#">Estratégia</a></li>
+      <li><a href="#">Simulação</a></li>
+      <li><a href="#">Esportes</a></li>
+      <li><a href="#">Corrida</a></li>
+      <li><a href="#">FPS</a></li>
+      <li><a href="#">TPS</a></li>
+      <li><a href="#">Survival</a></li>
+      <li><a href="#">Terror</a></li>
+      <li><a href="#">Mundo Aberto</a></li>
+      <li><a href="#">Plataforma</a></li>
+      <li><a href="#">Puzzle</a></li>
+      <li><a href="#">Carta & Tabuleiro</a></li>
+      <li><a href="#">Luta</a></li>
+      <li><a href="#">Musicais e Ritmo</a></li>
+      <li><a href="#">Sobrevivência</a></li>
+      <li><a href="#">Visual Novel</a></li>
+      <li><a href="#">Roguelike/Roguelite</a></li>
+    </ul>
+  </div>
+
+  <div class="cartao-categoria">
+    <h4><i class="fas fa-book-open"></i>Temas e Estilos</h4>
+    <ul>
+      <li><a href="#">Indie</a></li>
+      <li><a href="#">Retrô</a></li>
+      <li><a href="#">VR / Realidade Virtual</a></li>
+      <li><a href="#">Pixel Art</a></li>
+      <li><a href="#">Terror Psicológico</a></li>
+      <li><a href="#">Anime e Mangá</a></li>
+      <li><a href="#">Cyberpunk</a></li>
+      <li><a href="#">Exploração Espacial</a></li>
+      <li><a href="#">Fantasia Medieval</a></li>
+      <li><a href="#">Mitologia</a></li>
+      <li><a href="#">Steampunk</a></li>
+      <li><a href="#">eSports</a></li>
+      <li><a href="#">Festa / Multiplayer Local</a></li>
+      <li><a href="#">Infantil</a></li>
+      <li><a href="#">Educativo</a></li>
+    </ul>
+  </div>
+
+  <div class="cartao-categoria">
+    <h4><i class="fas fa-desktop"></i>Plataformas</h4>
+    <ul>
+      <li><a href="#">PC</a></li>
+      <li><a href="#">Console (PS/Xbox/Nintendo)</a></li>
+      <li><a href="#">Mobile</a></li>
+      <li><a href="#">VR / AR</a></li>
+      <li><a href="#">Jogos em Nuvem</a></li>
+      <li><a href="#">Cross-Platform</a></li>
+    </ul>
+  </div>
+
+  <div class="cartao-categoria">
+    <h4><i class="fas fa-users"></i>Modos de Jogo</h4>
+    <ul>
+      <li><a href="#">Single Player</a></li>
+      <li><a href="#">Multiplayer Online</a></li>
+      <li><a href="#">Cooperativo</a></li>
+      <li><a href="#">Competitivo</a></li>
+      <li><a href="#">Battle Royale</a></li>
+    </ul>
+  </div>
+
+  <div class="cartao-categoria">
+    <h4><i class="fas fa-book-open"></i>Gêneros Narrativos</h4>
+    <ul>
+      <li><a href="#">Ficção Científica</a></li>
+      <li><a href="#">Terror</a></li>
+      <li><a href="#">Drama</a></li>
+      <li><a href="#">Fantasia</a></li>
+      <li><a href="#">Comédia</a></li>
+      <li><a href="#">Suspense</a></li>
+      <li><a href="#">Histórico</a></li>
+      <li><a href="#">Mistério</a></li>
+      <li><a href="#">Romance</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <a href="https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe">Baixar Steam</a>
+  </footer>
+
+  <script>
+    const botaoMenu = document.getElementById("abrir-menu");
+    const menu = document.getElementById("menu-navegacao");
+
+    botaoMenu.addEventListener("click", () => {
+      menu.classList.toggle("ativo");
+    });
+  </script>
+</body>
+</html>

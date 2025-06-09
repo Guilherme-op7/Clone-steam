@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #171d25;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #1e2b3b;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.botao-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; 
+}
+
+.menu-navegacao {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-navegacao a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.menu-navegacao a:hover {
+  color: #66c0f4;
+}
+
+h1 {
+  margin: 22px;
+  color: white;
+  font-size: 2rem;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+
+.jogo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.imagem-jogo {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+  transition: transform 0.4s;
+}
+
+.imagem-jogo:hover {
+  transform: scale(1.02);
+}
+
+.botao-jogar {
+  transition: transform 0.4s;
+  color: #3f9cace3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-jogar:hover {
+  transform: scale(1.02);
+  color: aliceblue;
+}
+
+.info-jogo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  padding: 10px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #171a21;
+}
+
+footer a {
+  color: #66c0f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+ .botao-menu {
+    display: block;
+  }
+
+
+  .menu-navegacao {
+    display: none;
+    flex-direction: column;
+    background-color: #1e2b3b;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100; 
+  }
+
+
+  .menu-navegacao.ativo {
+    display: flex;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+.jogo {
+flex-direction: column;
+align-items: center;
+}
+
+.imagem-jogo {
+width: 100%;
+height: auto;
+}
+
+.info-jogo {
+align-items: center;
+text-align: center;
+}
+
+h1 {
+text-align: center;
+}
+
+}

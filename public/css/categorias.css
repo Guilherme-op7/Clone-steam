@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #171d25;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #1e2b3b;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.botao-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-navegacao {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-navegacao a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.menu-navegacao a:hover {
+  color: #66c0f4;
+}
+
+.conteudo-principal {
+  padding: 20px;
+  background-color: #212f41;
+  color: white;
+}
+
+.titulo {
+  text-align: center;
+  color: #66c0f4;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3d4450;
+  padding-bottom: 10px;
+}
+
+.sessao-categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grade-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.cartao-categoria {
+  background-color: #2a475e;
+  border-radius: 8px;
+  padding: 15px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cartao-categoria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #1a3f5c;
+}
+
+.cartao-categoria h4 {
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cartao-categoria h4 i {
+  margin-right: 10px;
+  color: #66c0f4;
+}
+
+.cartao-categoria ul {
+  list-style: none;
+}
+
+.cartao-categoria li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #3d4450;
+}
+
+.cartao-categoria li:last-child {
+  border-bottom: none;
+}
+
+.cartao-categoria a {
+  color: #c7d5e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cartao-categoria a:hover {
+  color: #66c0f4;
+}
+
+.rodape {
+  text-align: center;
+  padding: 40px;
+  background-color: #1e2b3b;
+}
+
+.rodape a {
+  color: #66c0f4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+
+.botao-menu {
+display: block;
+}
+
+.menu-navegacao {
+display: none;
+flex-direction: column;
+background-color: #1e2b3b;
+position: absolute;
+top: 65px;
+left: 0;
+width: 100%;
+padding: 10px 0;
+z-index: 100; 
+  }
+
+.menu-navegacao.ativo {
+display: flex;
+}
+
+.logo {
+width: 120px;
+}
+
+.grade-categorias {
+flex-direction: column;
+align-items: center;
+}
+
+.cartao-categoria {
+width: 90%;
+}
+}
