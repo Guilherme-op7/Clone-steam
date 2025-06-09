@@ -64,6 +64,7 @@ Este projeto é uma réplica inspirada na plataforma Steam, contendo 3 páginas 
 1. Clone ou baixe o repositório
 2. Abra o arquivo `index.html` em seu navegador
 3. Navegue entre as páginas clicando nos botões/links
+4. Ou acesse a url do site, https://clonedoguisteam.netlify.app/
 
 ---
 
