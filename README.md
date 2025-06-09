@@ -26,6 +26,13 @@ Este projeto é uma réplica inspirada na plataforma Steam, contendo 3 páginas 
    - Design adaptado para telas pequenas
 
 ---
+## Visual do Site
+
+![Imagem do Site](imagems.png)
+![steam](https://github.com/user-attachments/assets/33d58b5e-9d66-47b9-a5da-0b50b638d54a)
+
+---
+
 
 ## 💻 Tecnologias Utilizadas
 
